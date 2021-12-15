@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <section id="s-header">
+        <nav>
+            <div class="logo">
+                <i class="fad fa-user-hard-hat"></i>
+                <a href="">Waves <strong>Company</strong></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="/home.html">Home</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/Services.html">Services</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a href="" class="heroBtn">Get A Quote</a>
+        </nav>
+        <div class="textprojects service">
+            <h1>Our Services >></h1>
+            <p>Waves Construction Company</p>
+        </div>
+        <div class="navigator">
+            <i class="fas fa-arrow-left" id="arrowBtnL"></i>
+            <i class="fas fa-arrow-right" id="arrowBtnR"></i>
+        </div>
+    </section>
+    <section class="services">
+         <h2>Our Services</h2>
+         <div class="service-row">
+             <div class="service-col">
+                <i class="fas fa-drone-alt"></i>
+                  <h3>Materials Supplies</h3>
+                  <p>At Waves Construction Company we supply<br>
+                     infrastructure and building materials and <br>
+                     products to meet the demands of our contractor<br>
+                      customer base for projects..</p>
+             </div>
+             <div class="service-col">
+                <i class="fas fa-truck-loading"></i>
+                  <h3>Equipement Rental</h3>
+                  <p>At Waves Construction Company we supply<br>
+                     infrastructure and building materials and <br>
+                     products to meet the demands of our contractor<br>
+                      customer base for projects..</p>
+             </div>
+             <div class="service-col">
+                <i class="fas fa-university"></i>
+                  <h3>Site Development</h3>
+                  <p>At Waves Construction Company we supply<br>
+                     infrastructure and building materials and <br>
+                     products to meet the demands of our contractor<br>
+                      customer base for projects..</p>
+             </div>
+         </div>
+    </section>
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h2>Our Services</h2>
+                <div class="line">
+                    <i class="fas fa-arrow-right"></i>
+                    <p>Building</p>
+                </div>
+                <div class="line">
+                    <i class="fas fa-arrow-right"></i>
+                    <p>Quotes</p>
+                </div>
+                <div class="line">
+                    <i class="fas fa-arrow-right"></i>
+                    <p>Civil Engineering</p>
+                </div>
+                <div class="line">
+                    <i class="fas fa-arrow-right"></i>
+                    <p>Structural Engineering</p>
+                </div>
+                <div class="line">
+                    <i class="fas fa-arrow-right"></i>
+                    <p>Architectural Planning</p>
+                </div>
+                <div class="anime">
+                    <p></p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h2>Social Media</h2>
+                <div class="line">
+                    <i class="fab fa-facebook"></i>
+                    <p>Facebook</p>
+                </div>
+                <div class="line">
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                </div>
+                <div class="line">
+                    <i class="fab fa-linkedin"></i>
+                    <p>Linkedin</p>
+                </div>
+                <div class="line">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>WhatsApp</p>
+                </div>
+                <div class="line">
+                    <i class="fab fa-twitter"></i>
+                    <p>Twitter</p>
+                </div>
+                <div class="anime">
+                    <p></p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h2>Location</h2>
+                <div class="line">
+                    <i class="fas fa-map-marker-smile"></i>
+                    <p>Nairobi,Haile Selassie</p>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone"></i>
+                    <p>+254 01167598723</p>
+                </div>
+                <div class="line">
+                    <i class="fas fa-shipping-fast"></i>
+                    <p>iblwebdevelopers@gmail.com</p>
+                </div>
+                <div class="line">
+                    <i class="fas fa-browser"></i>
+                    <p>www.iblwebevelopers.com</p>
+                </div>
+                <div class="line">
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                </div>
+                <div class="anime">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright 2021| Waves Company Limited</p>
+        </div>
+    </section>
+    <script>
+        let backgroundImg = new Array(
+            "/Images/pexels-brayden-law-1738986.jpg",
+            "/Images/1.jpg",
+            "/Images/2.jpg",
+            "/Images/3.jpg",
+            "/Images/4.jpg",
+        );
+        let i =0;
+        let arrowBtnL = document.getElementById('arrowBtnL');
+        let arrowBtnR = document.getElementById('arrowBtnR');
+        let Sheader = document.getElementById('s-header');
+
+        arrowBtnR.onclick =()=>{
+           if(i<backgroundImg.length-1){
+            Sheader.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+            i++;
+           }
+          }
+          arrowBtnL.onclick =()=>{
+              if(i>0){
+                Sheader.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+                i--;
+              }
+          }
+  
+        //next.onclick=()=>{
+        //    smallImg[i+1].classList.add('active');
+        //    smallImg[i].classList.remove('active');
+        //    i++;
+      //  }
+       // prev.onclick =()=>{
+        //    if(i>0){
+               // smallImg[i-1].classList.add('active');
+        //    smallImg[i].classList.remove('active');
+        //    i--;
+        //    }
+       // }
+        //window.addEventListener('load',()=>{
+        //    showTestimonials(0);
+        //    let QueNumber = 0;
+        //    NextBtn.onclick =()=>{
+         //     if(QueNumber < testContent.length-1){
+          //      QueNumber++;
+          //      showTestimonials(QueNumber);
+          //    }
+         //   }
+          //  prevBtn.onclick =()=>{
+          //      if(QueNumber > 0){
+            //        QueNumber--;
+            //        showTestimonials(QueNumber);
+            //    }
+           // }
+           // function showTestimonials(index){
+           //     let user = document.querySelector('.content-info h3');
+            //     let testimonial = document.querySelector('.content-info p');
+            
+               //  userImg.src = testContent[index].imgpath;
+               //  console.log(testContent[3].username)
+                 //console.log(testContent[3].userFeedback)
+               //  user.innerHTML = testContent[index].username;
+               //  testimonial.innerHTML = testContent[index].userFeedback;
+           // }
+      //  });
+    </script>
+    <script src="app.js"></script>
+    <script src="testimonials.js"></script>
+</body>
+</html>
